@@ -31,7 +31,6 @@ $('.owl-3').owlCarousel({
 $('#ham-menu').click(() => {
    $('#ham-x').removeClass('hidden')
    $('#ham-menu').addClass('hidden');
-    $('nav').removeClass('absolute');
    $('#mbl-menu').removeClass('hidden')
 })
 
