@@ -1,12 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 
-*{
-    font-family: 'Work Sans', sans-serif;
-
+* {
+  font-family: "Work Sans", sans-serif;
 }
-.section-1{
-    background-image: url(assets/Bg-Shape1.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 50%;
+.section-1 {
+  background-image: url(assets/Bg-Shape1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.section-5 .owl-dots {
+  display: none;
+}
+.section-5 .bottom-part {
+}
+.section-5 .owl-nav .owl-prev {
+  position: absolute;
+  right: 70px;
+  top: -30px;
+}
+.section-5 .owl-nav i {
+  font-size: 1.5em;
+  color: #ff3946;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #ffffff;
+    color: #FFF;
+    text-decoration: none;
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+}
+.section-5 .owl-nav .owl-next {
+  position: absolute;
+  right: 20px;
+  top: -30px;
+}
+
+.section-3{
+
 }

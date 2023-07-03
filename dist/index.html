@@ -19,44 +19,73 @@
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
 
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- external css  -->
     
     
-  <link rel="stylesheet" href="/assets/index-6819fd86.css">
+  <link rel="stylesheet" href="/assets/index-eee289a6.css">
 </head>
 
 <body>
-    <nav class="flex items-center justify-between flex-wrap xl:px-48 xl:py-10 p-10  bg-transparent w-full">
-        <div class="logo text-2xl font-semibold text-[#314584] ">
-            D<span class="border-b-[6px] border-red-600">OO</span>B
-        </div>
-        <div class="navigation hidden lgn:inline-block">
-            <ul class="flex justify-center items-center space-x-4 text-[#314584]">
+    <div class="absolute  bg-white lgn:bg-transparent w-full">
+        <nav class="flex items-center justify-between flex-wrap xl:px-48 xl:py-10 p-10 ">
+            <div class="logo text-2xl font-semibold text-[#314584]">
+                <a href="" class="hover:text-red-500 hover:ease-in-out">D<span
+                        class="border-b-[6px] border-red-600">OO</span>B</a>
+            </div>
+            <div class="navigation hidden lgn:inline-block">
+                <ul class="flex justify-center items-center space-x-4 text-[#314584]">
+                    <li><a href="#" class="hover:text-[#ff0011]">Home.</a></li>
+                    <li><a href="#" class="hover:text-[#ff0011]">About us.</a></li>
+                    <li><a href="#" class="hover:text-[#ff0011]">Portfolio.</a></li>
+                    <li><a href="#" class="hover:text-[#ff0011]">Blog.</a></li>
+                    <li><a href="#" class="hover:text-[#ff0011]">Contact us.</a></li>
+                </ul>
+
+            </div>
+            <div class=" hidden lgn:flex items-center justify-between space-x-6 text-[#314584]">
+                <div class="language">
+                    <select name="language" id="language" class="text-lg font-semibolds">
+                        <option value="English">EN</option>
+                        <option value="Nepali">NP</option>
+                        <option value="Hindi">HI</option>
+                    </select>
+                </div>
+                <div class="contact lgn:flex items-center hidden justify-between space-x-4">
+                    <button class="btn text-white text-lg rounded-full bg-[#ff3946] p-1 w-40">Contact us<i
+                            class="ease-in-out duration-500 hover:translate-x-4 fa-duotone fa-arrow-right text-2xl ml-3 "></i></button>
+
+                </div>
+            </div>
+            <div id="ham-x" class="hidden ham lgn:hidden">
+                <i class='x-mark fa-regular fa-xmark text-2xl text-[#314584]'></i>
+            </div>
+            <div id="ham-menu" class="ham lgn:hidden">
+                <i class='fa-solid fa-bars text-2xl text-[#314584]'></i>
+            </div>
+
+        </nav>
+        <div  id="mbl-menu" class="hidden">
+            <ul class="flex justify-center items-end space-x-4 text-[#314584]">
                 <li><a href="#" class="hover:text-[#ff0011]">Home.</a></li>
                 <li><a href="#" class="hover:text-[#ff0011]">About us.</a></li>
                 <li><a href="#" class="hover:text-[#ff0011]">Portfolio.</a></li>
                 <li><a href="#" class="hover:text-[#ff0011]">Blog.</a></li>
                 <li><a href="#" class="hover:text-[#ff0011]">Contact us.</a></li>
             </ul>
+        </div>
+    </div>
+    
 
-        </div>
-        <div class=" hidden lgn:flex items-center justify-between space-x-6 text-[#314584]">
-            <div class="language">
-                <select name="language" id="language" class="text-lg font-semibolds">
-                    <option value="English">EN</option>
-                    <option value="Nepali">NP</option>
-                    <option value="Hindi">HI</option>
-                </select>
-            </div>
-            <div class="contact lgn:flex items-center hidden justify-between space-x-4">
-                <button class="btn text-white text-lg rounded-full bg-[#ff3946] p-1 w-40">Contact us<i class="ease-in-out duration-500 hover:translate-x-4 fa-duotone fa-arrow-right text-2xl ml-3 "></i></button>
-                
-            </div>
-        </div>
-        <div class="ham lgn:hidden">
-            <i class="fa-solid fa-bars text-2xl text-[#314584]"></i>
-        </div>
-    </nav>
     <!-- section first -->
     <section class="section-1 xl:px-20 xl:py-10 p-5 bg-none ">
         <div
@@ -81,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="section-2 xl:px-20 xl:py-10 p-5">
+    <section class="section-2 xl:px-20 xl:py-10 p-5 relative">
         <div
             class="main flex items-center text-[#314584] justify-center flex-col space-y-10 md-space-y-0 md:justify-between md:flex-row md:space-x-10 p-5 ">
             <div class="left-part space-y-7 text-[#314584]">
@@ -118,6 +147,7 @@
             </div>
 
         </div>
+        <div><img src="/assets/Bg.-Shape-2-ce208fb9.png" class="absolute w-[12%] top-40 left-0" alt=""></div>
     </section>
 
     <section class="section-3 xl:px-20 xl:py-10 p-5">
@@ -125,33 +155,16 @@
             <div class="left-part md:w-1/2">
                 <img src="/assets/Vector-Illustration-section-2-59fe6bb2.png" alt="">
             </div>
-            <div class="right-part md:w-1/2 px-10">
-                <div class="space-y-5 ">
+
+
+            <div class="  right-part md:w-1/2 px-10 h-full">
+                <div class="item space-y-5  h-full">
                     <p class="text-sm text-[#ff3946]">OUR COMPANY</p>
                     <p class="text-2xl">Some Fine Words About Us</p>
-                    <p class="text">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor
-                        accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui. Nulla
-                        porttitor accumsan tincidunt.</p>
-                </div>
-                <div class="hidden">
-                    <p class="text-sm">OUR COMPANY</p>
-                    <p class="text-2xl">Some Fine Words About Us</p>
-                    <p class="text">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor
-                        accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui. Nulla
-                        porttitor accumsan tincidunt.</p>
-                </div>
-                <div class="hidden">
-                    <p class="text-sm">OUR COMPANY</p>
-                    <p class="text-2xl">Some Fine Words About Us</p>
-                    <p class="text">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor
-                        accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui. Nulla
-                        porttitor accumsan tincidunt.</p>
-                </div>
-                <div class="hidden">
-                    <p class="text-sm">OUR COMPANY</p>
-                    <p class="text-2xl">Some Fine Words About Us</p>
-                    <p class="text">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor
-                        accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui. Nulla
+                    <p class="text">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                        porttitor
+                        accumsan tincidunt.Vestibulum ac diam sit amet. Quam vehicula elementum amet est on dui.
+                        Nulla
                         porttitor accumsan tincidunt.</p>
                 </div>
             </div>
@@ -194,31 +207,72 @@
                 <p class="text-lg font-semibold text-[#ff3946]">BLOG STORIES</p>
                 <p class="text-3xl font-semibold text-[#314584]">Check Our News</p>
             </div>
+
+
             <div
-                class="bottom-part space-y-10 lg:space-y-0 lg:flex lg:items-center lg:justify-between lg:space-x-10 h-full">
-                <div class="card-1 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer">
+                class="relative bottom-part owl-carousel owl-theme  space-y-10 lg:space-y-0 lg:flex lg:items-center lg:justify-between lg:space-x-10 h-full">
+                <div
+                    class="item card-1 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer m-5  xl:mx-10 ">
                     <h2>New Advanture</h2>
                     <p class="date text-sm">17 March 2019</p>
                     <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
                         porttitor accumsan tincidunt.</p>
-                    <a href=""><i class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
+                    <a href=""><i
+                            class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
+                </div>
+                <div
+                    class="item card-2 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer m-5  xl:mx-10">
+                    <h2>New Advanture</h2>
+                    <p class="date text-sm">17 March 2019</p>
+                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                        porttitor accumsan tincidunt.</p>
+                    <a href=""><i
+                            class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
+                </div>
+                <div
+                    class="item card-3 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer m-5  xl:mx-10">
+                    <h2>New Advanture</h2>
+                    <p class="date text-sm">17 March 2019</p>
+                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                        porttitor accumsan tincidunt.</p>
+                    <a href=""><i
+                            class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
+                </div>
+                <div class="item card-3 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer m-5 ">
+                    <h2>New Advanture</h2>
+                    <p class="date text-sm">17 March 2019</p>
+                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                        porttitor accumsan tincidunt.</p>
+                    <a href=""><i
+                            class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
+                </div>
+                <div class="item card-3 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer m-5 ">
+                    <h2>New Advanture</h2>
+                    <p class="date text-sm">17 March 2019</p>
+                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                        porttitor accumsan tincidunt.</p>
+                    <a href=""><i
+                            class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
+                </div>
+                <div
+                    class="item card-3 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer m-5  xl:mx-20">
+                    <h2>New Advanture</h2>
+                    <p class="date text-sm">17 March 2019</p>
+                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                        porttitor accumsan tincidunt.</p>
+                    <a href=""><i
+                            class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
+                </div>
+                <div
+                    class="item card-3 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer m-5 mb-[60px] xl:mx-10">
+                    <h2>New Advanture</h2>
+                    <p class="date text-sm">17 March 2019</p>
+                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
+                        porttitor accumsan tincidunt.</p>
+                    <a href=""><i
+                            class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
                 </div>
 
-                <div class="card-2 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer">
-                    <h2>New Advanture</h2>
-                    <p class="date text-sm">17 March 2019</p>
-                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
-                        porttitor accumsan tincidunt.</p>
-                    <a href=""><i class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
-                </div>
-
-                <div class="card-3 py-20 px-10 space-y-10 shadow-2xl hover:bg-[#ffdfe1] cursor-pointer">
-                    <h2>New Advanture</h2>
-                    <p class="date text-sm">17 March 2019</p>
-                    <p class="text-lg">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla
-                        porttitor accumsan tincidunt.</p>
-                    <a href=""><i class="fa-duotone fa-arrow-right ml-[90%] ease-in-out duration-500 hover:translate-x-4 text-2xl text-[#ff3946]"></i></a>
-                </div>
             </div>
         </div>
     </section>
@@ -236,9 +290,9 @@
                         class="placeholder:text-[#314584] bg-[#f4fafe] outline-none text-[#314584] p-5 w-full md:w-[45%]">
                 </div>
 
-                <textarea name=""
-                    class="placeholder:text-[#314584] bg-[#f4fafe] outline-none text-[#314584] p-5  w-full" id=""
-                    cols="45" rows="2" placeholder="Message Here">
+                <textarea name="messsage"
+                    class="placeholder:text-[#314584] bg-[#f4fafe] outline-none text-[#314584] p-2  w-full" id=""
+                    cols="45" rows="2" placeholder="Message Here...">
                 </textarea>
             </form>
             <div class="logo">
@@ -249,7 +303,7 @@
         </div>
 
     </section>
-    <footer class="bg-[#314584] text-white xl:px-20 xl:py-10 p-5" >
+    <footer class="bg-[#314584] text-white xl:px-20 xl:py-10 p-5">
         <div class="main flex items-center justify-center flex-col space-y-10">
             <p>DOOB</p>
             <p class="text-4xl text-[#ff0011] font-medium">CREATIVITY ABOVE</p>
@@ -270,6 +324,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
